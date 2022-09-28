@@ -7,12 +7,12 @@ int main(){
 //ask the user for the name of the file he wants to create 
 char file_name[256];
 char file_full[266];
-strcpy(file_full,"./files/");
+strcpy(file_full,"./exos/");
 printf("What is the name of the file you want to process ? \n PS: add the extention please \n");
 scanf("%s",&file_name);
 FILE *f ;
-f = fopen(file_name,"w");
 strcat(file_full,file_name);
+f = fopen(file_full,"w");
 printf("What do you want to write ? / PS: max size is 255 characters \n");
 char string_s[255];
 char *temp;
