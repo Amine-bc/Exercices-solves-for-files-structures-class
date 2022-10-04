@@ -17,6 +17,7 @@ printf("File not found ");
 exit(1);
 }else
 {
+    printf(f);
 while ((c=fgetc(f)) != EOF)
 {
     putchar(c);
